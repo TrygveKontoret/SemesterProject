@@ -12,18 +12,29 @@
             <img src="/optimalisert/icon-1719742.png" alt="Logo">
         </div>
         <nav>
-            <ul class="navbar">
-                <li>Explore</li>
-                <li>Exhibitions</li>
-                <li>Visit</li>
-                <li>Get Involved</li>
+            <ul class="navbar-head">
+                <li><a href="/explore.html">Explore</a></li>
+                <li><a href="/explore.html">exhibit</a></li>
+                <li><a href="/explore.html">Visit</a></li>
+                <li><a href="/explore.html">involce</a></li>
             </ul>
+            
         </nav>
         <div class="hamburger">
             <img src="/optimalisert/burger2x.png" alt="Hamburger meny">
         </div>
     </header>
 <main>
+    <ul class="navbar">
+        <li id="active"><a href="#">Home</a></li>
+        <li><a href="/explore.html">Explore</a></li>
+        <li><a href="/explore.html">exhibit</a></li>
+        <li><a href="/explore.html">Visit</a></li>
+        <li><a href="/explore.html">involce</a></li>
+        <!-- <li><a></a>Exhibitions</li>
+        <li>Visit</li>
+        <li>Get Involved</li> -->
+    </ul>
     <div class="hero">
         <div class="indexbox">
             <h1>Community Science Museum</h1>
@@ -34,12 +45,8 @@
             <p>Come join us at the Community Science Museum where we’re committed 
             to making science accessible to all.
             </p>
-            <div class="btn">
-                <a href="/explore.html">Explore</a>
-            </div>
-            
-                <img src="/optimalisert/skalert/andrew-ruiz-348421.jpg" alt="Space Man Picture" id="space">
-
+            <a class="btn" href="/explore.html">Explore</a>
+            <img src="/optimalisert/skalert/andrew-ruiz-348421.jpg" alt="Space Man Picture" id="space">
         </div>
         
     </div>
@@ -98,10 +105,15 @@
             <figcaption>Robotics and AI</figcaption>
         </figure>
     </div>
+    <div class="exhibitbtn" >
+        <a class="btn" href="/Exhibitions.html">View More</a>
+    </div>
 </main>
 <footer>
     <p>Contact</p>
 </footer>
-    
+    <script src="./js/script.js">
+
+    </script>
 </body>
 </html>
