@@ -142,8 +142,7 @@ header {
 
 .cards,
 .blocks,
-.rev,
-.blocks-exhibit {
+.rev {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -154,6 +153,7 @@ header {
 
 .rev {
   flex-direction: column-reverse;
+  padding: 0;
 }
 
 /* .pics {
@@ -188,9 +188,13 @@ header {
 .exbox {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 83%;
   justify-content: center;
   align-items: center;
+}
+
+.blocks-exhibit {
+  padding-bottom: 30px;
 }
 
 /* .images-mobile {
@@ -204,7 +208,7 @@ header {
 .indexbox {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 83%;
   align-items: center;
 }
 
@@ -247,7 +251,7 @@ header {
 .box {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 83%;
   align-items: center;
 }
 
@@ -263,6 +267,13 @@ header {
 }
 
 .hero-exhibit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+}
+
+.hero-involved {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -287,31 +298,15 @@ header {
   padding-top: 30px;
 }
 
+iframe {
+  border: none;
+}
+
 .gmap_canvas {
   overflow: hidden;
   background: none;
   height: 200px;
   width: 310px;
-}
-
-.hero-visit {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0;
-}
-
-.sitemap {
-  display: flex;
-  justify-content: space-around;
-}
-
-.sitemap li {
-  text-decoration: underline;
-  list-style: none;
-  padding: 20px 0px;
-  font-size: 20px;
-  font-weight: bold;
 }
 
 #news {
@@ -321,6 +316,48 @@ header {
 
 #exhibit {
   display: none;
+}
+
+/* Visit */
+
+.hero-visit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+}
+
+.sitemap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sitemap a {
+  color: #000;
+}
+
+.sitemap li {
+  text-decoration: underline;
+  list-style: none;
+  padding: 20px 30px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.visit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+.visit p {
+  padding-top: 30px;
+}
+
+.visit h3 {
+  width: 100%;
+  padding: 0;
 }
 
 /* Media querys */
@@ -350,13 +387,18 @@ header {
     max-width: 310px;
   }
 
+  .indexbox h1 {
+    font-size: 25px;
+  }
+
   /* .images-mobile {
     display: none;
   } */
 
   #space,
   #science,
-  #mammoth {
+  #mammoth,
+  #museumpic {
     display: none;
   }
 
@@ -393,10 +435,16 @@ header {
     box-shadow: 0 0 0 1px #000;
   }
 
+  .exbox,
+  .pics {
+    width: 70%;
+  }
+
   #news {
     background-color: white;
     color: black;
-    font-size: 40px;
+    font-size: 30px;
+    margin-bottom: 30px;
   }
 
   .cards img {
@@ -449,7 +497,26 @@ header {
     background-position: center;
   }
 
-  .box {
+  .hero-involved {
+    display: flex;
+    align-items: center;
+    background-image: url(/optimalisert/Hero/william-bout-264826.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .hero-visit {
+    display: flex;
+    align-items: center;
+    background-image: url(/optimalisert/Hero/scott-webb-102825.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .box,
+  .boxsmall {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -458,6 +525,14 @@ header {
     color: white;
     padding: 30px;
     margin: 100px auto;
+  }
+
+  .boxsmall {
+    width: 10%;
+  }
+
+  .boxsmall h1 {
+    padding: 0;
   }
 
   /* .images {
@@ -469,18 +544,65 @@ header {
     max-width: 100%;
   }
 
-  .blocks {
+  /* .box h1 {
+    padding: 0;
+  } */
+
+  /* .blocks {
     flex-direction: row;
+  } */
+
+  /* .blocks-exhibit {
+    flex-direction: column;
+  } */
+
+  /* .exbox {
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 550px;
+    margin: 0 0 30px 50px;
+    height: 245px;
   }
 
-  .blocks-exhibit {
-    flex-direction: column;
+  .exbox p {
+    margin-top: 15px;
+  } */
+
+  /* .rev {
+    display: flex;
+    flex-direction: row;
+  } */
+
+  /* .pics {
+    width: 370px;
+    margin: 30px 50px 30px 50px;
+  }
+
+  .pics img {
+    margin: 0;
+  } */
+}
+
+@media (min-width: 1000px) {
+  .blocks {
+    flex-direction: row;
+    height: 350px;
   }
 
   .exbox {
+    flex-direction: column;
     justify-content: flex-start;
-    width: 40%;
-    margin-left: 100px;
+    width: 550px;
+    margin: 0 0 30px 50px;
+    height: 245px;
+  }
+
+  .exbox p {
+    margin-top: 15px;
+  }
+
+  .blocks-exhibit p {
+    margin-top: 30px;
   }
 
   .rev {
@@ -489,8 +611,41 @@ header {
   }
 
   .pics {
-    width: 40%;
+    width: 370px;
+    margin: 30px 50px 30px 50px;
+  }
+
+  .pics img {
+    margin: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .blocks,
+  .blocks-exhibit {
+    flex-direction: row;
+    height: 450px;
+    padding: 0;
+  }
+
+  .exbox {
+    justify-content: flex-start;
+    width: 450px;
+    margin-left: 100px;
+    height: 340px;
+  }
+
+  .exbox p {
+    margin-top: 30px;
+  }
+
+  .pics {
+    width: 530px;
     margin: 30px 100px 30px 50px;
+  }
+
+  .pics img {
+    margin: 0;
   }
 }
 
@@ -509,8 +664,7 @@ header {
   }
 
   .cards,
-  .blocks,
-  .blocks-exhibit {
+  .blocks {
     /* display: flex; */
     /* flex-direction: column; */
     /* justify-content: center; */
@@ -526,4 +680,8 @@ header {
     background-color: #365b73;
     color: white;
   }
+
+  /* #news {
+    margin-bottom: 30px;
+  } */
 }
