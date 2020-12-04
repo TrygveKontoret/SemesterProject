@@ -8,15 +8,16 @@
 </head>
 <header>
     <div class="header-logo">
-        <img src="/optimalisert/icon-1719742.png" alt="Logo">
+        <a href="/index.html"><img src="/optimalisert/icon-1719742.png" alt="Logo"></a>
     </div>
     <nav>
-        <ul class="navbar">
-            <li>Explore</li>
-            <li>Exhibitions</li>
-            <li>Visit</li>
-            <li>Get Involved</li>
+        <ul class="navbar-head">
+            <li><a href="/explore.html">Explore</a></li>
+            <li><a href="/Exhibitions.html">Exhibitions</a></li>
+            <li><a href="/visit.html">Visit</a></li>
+            <li><a href="/involved.html">Get Involved</a></li>
         </ul>
+        
     </nav>
     <div class="hamburger">
         <img src="/optimalisert/burger2x.png" alt="Hamburger meny">
@@ -24,6 +25,13 @@
 </header>
 <body>
     <main>
+        <ul class="navbar">
+                <li><a href="/index.html">Home</a></li>
+                <li id="active"><a href="#">Explore</a></li>
+                <li><a href="/Exhibitions.html">Exhibitions</a></li>
+                <li><a href="/visit.html">Visit</a></li>
+                <li><a href="/involved.html">Get Involved</a></li>
+        </ul>
         <div class="hero-explore">
             <div class="box">
                 <h1>Explore</h1>
@@ -97,6 +105,10 @@
         </div>
     
     </main>
+
+    <script src="./js/script.js">
+
+    </script>
     
 </body>
 </html>

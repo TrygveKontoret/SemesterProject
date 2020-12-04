@@ -64,7 +64,7 @@ header {
   display: flex;
   justify-content: center;
   align-self: center;
-  /* margin: 10px 0px 10px 10px; */
+  margin: 10px 0px 5px 10px;
 }
 
 .header-logo img {
@@ -87,7 +87,7 @@ header {
   align-items: center;
   justify-content: space-evenly;
   z-index: 0;
-  background-color: #62c3d9;
+  background-color: #30638e;
 }
 
 .navbar li {
@@ -97,12 +97,12 @@ header {
 
 .navbar a {
   display: block;
-  color: #000;
+  color: white;
   padding: 15px 0px;
 }
 
 #active {
-  background-color: lightgray;
+  background-color: #00798c;
 }
 
 /* .navbar li {
@@ -114,11 +114,11 @@ header {
   justify-content: center;
   align-items: center;
   /* margin: 20px 0px 20px 0px; */
-  cursor: pointer;
 }
 
 .hamburger img {
   width: 30px;
+  cursor: pointer;
 }
 
 .slidein {
@@ -608,6 +608,10 @@ iframe {
     align-items: center;
   }
 
+  .navbar {
+    display: none;
+  }
+
   .navbar-head {
     display: flex;
     flex-direction: row;
@@ -728,7 +732,7 @@ iframe {
     /* justify-content: center; */
     /* align-items: center; */
     padding: 0 0 30px 0;
-    width: 100vw;
+    width: 100%;
     margin: 0;
     background-color: white;
     color: black;
