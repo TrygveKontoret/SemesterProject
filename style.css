@@ -8,7 +8,12 @@ font-family: 'Roboto', sans-serif; */
   padding: 0px;
 }
 
-p {
+html {
+  height: 100%;
+}
+
+p,
+body {
   font-family: "Roboto", sans-serif;
 }
 
@@ -69,6 +74,22 @@ header {
 
 .header-logo img {
   width: 30px;
+}
+
+footer {
+  /* position: absolute;
+  width: 100%;
+  bottom: 1; */
+  background-color: #30638e;
+  color: white;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  margin: 20px;
 }
 
 /* Menu */
@@ -329,6 +350,11 @@ header {
   padding: 30px;
 }
 
+.drink {
+  background-color: #365b73;
+  color: white;
+}
+
 .visit p {
   padding-top: 30px;
   max-width: 500px;
@@ -402,6 +428,7 @@ iframe {
   .exhibitbtn {
     display: flex;
     justify-content: center;
+    margin-bottom: 30px;
   }
 
   .btn {
@@ -589,16 +616,13 @@ iframe {
   }
 
   iframe {
-    width: 500px;
+    width: 100%;
+    height: 100%;
   }
 
   .gmap_canvas {
     height: 350px;
     width: 500px;
-  }
-
-  .visit {
-    height: 450px;
   }
 }
 
@@ -669,6 +693,7 @@ iframe {
   .visitpage {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    /* margin-bottom: 30px; */
   }
 
   .mapouter {
@@ -679,6 +704,16 @@ iframe {
   .gmap_canvas {
     height: 350px;
     width: 400px;
+  }
+
+  .admis {
+    background-color: #365b73;
+    color: white;
+  }
+
+  .drink {
+    background-color: white;
+    color: black;
   }
 }
 
