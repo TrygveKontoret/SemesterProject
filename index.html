@@ -4,21 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Community Science Museum</title>
+    <meta name="description" content="Come join us at the Community Science Museum where we’re committed 
+    to making science accessible to all.">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 </head>
 <body>
-    <header>
+   <header>
         <div class="header-logo">
             <a href="#"><img src="/optimalisert/icon-1719742.png" alt="Logo"></a>
         </div>
         <nav>
             <ul class="navbar-head">
+                <li><a id="activehead" href="#">Home</a></li>
                 <li><a href="/explore.html">Explore</a></li>
                 <li><a href="/Exhibitions.html">Exhibitions</a></li>
                 <li><a href="/visit.html">Visit</a></li>
                 <li><a href="/involved.html">Get Involved</a></li>
             </ul>
-            
         </nav>
         <div class="hamburger">
             <img class="burgerjs" src="/optimalisert/burger2x.png" alt="Hamburger meny">
@@ -26,11 +29,11 @@
     </header>
 <main>
     <ul class="navbar">
-            <li id="active"><a href="#">Home</a></li>
-            <li><a href="/explore.html">Explore</a></li>
-            <li><a href="/Exhibitions.html">Exhibitions</a></li>
-            <li><a href="/visit.html">Visit</a></li>
-            <li><a href="/involved.html">Get Involved</a></li>
+        <li id="active"><a href="#">Home</a></li>
+        <li><a href="/explore.html">Explore</a></li>
+        <li><a href="/Exhibitions.html">Exhibitions</a></li>
+        <li><a href="/visit.html">Visit</a></li>
+        <li><a href="/involved.html">Get Involved</a></li>
     </ul>
     <div class="hero">
         <div class="indexbox">
@@ -45,22 +48,21 @@
             <a class="btn" href="/explore.html">Explore</a>
             <img src="/optimalisert/skalert/andrew-ruiz-348421.jpg" alt="Space Man Picture" id="space">
         </div>
-        
     </div>
     <h2 id="news">News</h2>
     <div class="newz">
-            <div class="cards dark">
-                <div class="images">
-                    <h3>Visiting Professor of Aeronautics</h3>
-                    <p>It is our pleasure to announce that Prof Sheila Widnall from 
-                    the Massachusetts Institute of Technology will be delivering 3 
-                    lectures on the development of aeronautics and where the future 
-                    lies in this exciting ‘space’.
-                    </p>
-                    <img src="/optimalisert/skalert/Spaceship.jpg" alt="Inside Spaceship">
-                </div>
+        <div class="cards dark">
+            <div class="images">
+                <h3>Visiting Professor of Aeronautics</h3>
+                <p>It is our pleasure to announce that Prof Sheila Widnall from 
+                the Massachusetts Institute of Technology will be delivering 3 
+                lectures on the development of aeronautics and where the future 
+                lies in this exciting ‘space’.
+                </p>
+                <img src="/optimalisert/skalert/Spaceship.jpg" alt="Inside Spaceship">
             </div>
-            <div class="cards">
+        </div>
+        <div class="cards">
             <div class="images">
                 <h3>Night in the Museum</h3>
                 <p>Get your family together for an exciting night in the 
@@ -106,9 +108,23 @@
         <a class="btn" href="/Exhibitions.html">View More</a>
     </div>
 </main>
-<footer>
-    <p><a href="/visit.html">Visit</a></p>
-    <p><a href="/involved.html">Get Involved</a></p>
+<hr id="line">
+<footer class="footergrid">
+    <div class="fmenu">
+        <p>Menu:</p>
+        <p><a href="/index.html">Home</a></p>
+        <p><a href="/explore.html">Explore</a></p>
+        <p><a href="/Exhibitions.html">Exhibitions</a></p>
+        <p><a href="/visit.html">Visit</a></p>
+        <p><a href="/involved.html">Get Involved</a></p>
+    </div>
+    <div class="fcontact">
+        <p>Contact:</p>
+        <p><i class="far fa-envelope"></i> Science@museum.com</p>
+        <p><i class="fas fa-phone-alt"></i> +4755458631</p>
+        <p>Kniksens Plass 10, 5063 Bergen.</p>
+    </div>
+    <p id="copyright">Copyrights reserved © Trygve Grant</p>
 </footer>
     <script src="./js/script.js">
     </script>

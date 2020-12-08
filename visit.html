@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Visit | Community Science Museum</title>
+    <meta name="description" content="Come visit the Community Science Museum. 
+    Here you will find all relevant information about the museum">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 </head>
 <body>
     <header>
@@ -13,61 +16,55 @@
         </div>
         <nav>
             <ul class="navbar-head">
+                <li><a href="/index.html">Home</a></li>
                 <li><a href="/explore.html">Explore</a></li>
                 <li><a href="/Exhibitions.html">Exhibitions</a></li>
-                <li><a href="/visit.html">Visit</a></li>
+                <li><a id="activehead" href="#">Visit</a></li>
                 <li><a href="/involved.html">Get Involved</a></li>
             </ul>
-            
         </nav>
         <div class="hamburger">
             <img class="burgerjs" src="/optimalisert/burger2x.png" alt="Hamburger meny">
         </div>
     </header>
     <ul class="navbar">
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/explore.html">Explore</a></li>
-            <li><a href="/Exhibitions.html">Exhibitions</a></li>
-            <li id="active"><a href="#">Visit</a></li>
-            <li><a href="/involved.html">Get Involved</a></li>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/explore.html">Explore</a></li>
+        <li><a href="/Exhibitions.html">Exhibitions</a></li>
+        <li id="active"><a href="#">Visit</a></li>
+        <li><a href="/involved.html">Get Involved</a></li>
     </ul>
     <div class="hero-visit">
-            <div class="boxsmall">
+        <div class="boxsmall">
             <h1>Visit</h1>
         </div>
-            <div class="images">
-                <img id="museumpic" src="/optimalisert/skalert/scott-webb-102825.jpg" alt="Museum image">
-            </div>
+        <div class="images">
+            <img id="museumpic" src="/optimalisert/skalert/scott-webb-102825.jpg" alt="Museum image">
         </div>
-    <main class="visitpage">
-        
-        
-        
-            <h2 id="smap">Sitemap</h2>
-            <nav class="sitemap">
-                
-                <ul>
-                    <li><a href="#location">Location</a></li>
-                    <li><a href="#hours">Hours</a></li>
-                    <li><a href="#food">Food and drink</a></li>
-                    
-                </ul>
-                <ul>
-                    <li><a href="#accessibility">Accessibility</a></li>
-                    <li><a href="#admission">Admission</a></li>
-                    <li><a href="#shop">Shop</a></li>
-                </ul>
-            </nav>
-        
+    </div>
+    <main class="visitpage">    
+        <h2 id="smap">Sitemap</h2>
+        <nav class="sitemap">
+            <ul>
+                <li><a href="#location">Location</a></li>
+                <li><a href="#hours">Hours</a></li>
+                <li><a href="#food">Food and drink</a></li>
+            </ul>
+            <ul>
+                <li><a href="#accessibility">Accessibility</a></li>
+                <li><a href="#admission">Admission</a></li>
+                <li><a href="#shop">Shop</a></li>
+            </ul>
+        </nav>
         <div class="visit dark">
             <h3 id="hours">Hours</h3>
             <p>Monday: Closed</p>
-                <p>Tuesday: 10:00 – 16:00</p>
-                <p> Wednesday: 10:00 – 16:00</p>
-                <p>Thursday: 10:00 – 16:00</p>
-                <p>Friday: 10:00 – 19:00</p>
-                <p>Saturday: 9:00 – 16:00</p>
-                <p>Sunday: 9:00 – 13:00</p> 
+            <p>Tuesday: 10:00 – 16:00</p>
+            <p> Wednesday: 10:00 – 16:00</p>
+            <p>Thursday: 10:00 – 16:00</p>
+            <p>Friday: 10:00 – 19:00</p>
+            <p>Saturday: 9:00 – 16:00</p>
+            <p>Sunday: 9:00 – 13:00</p> 
         </div>
         <div class="visit admis">
             <h3 id="admission">Admission</h3>
@@ -88,11 +85,11 @@
                 <div class="gmap_canvas">
                     <iframe width="600" height="500" id="gmap_canvas" 
                     src="https://maps.google.com/maps?q=kniksens%20plass%2010&t=&z=15&ie=UTF8&iwloc=&output=embed">
-                </iframe>
-                <a href="https://sites.google.com/view/maps-api-v2/mapv2">
-                </a>
+                    </iframe>
+                    <a href="https://sites.google.com/view/maps-api-v2/mapv2">
+                    </a>
+                </div>
             </div>
-        </div>
         </div>
         <div class="visit">
             <h3 id="shop">Shop</h3>
@@ -114,14 +111,25 @@
             </p>
         </div>
     </main>
-    <footer>
-        <p><a href="/visit.html">Visit</a></p>
-        <p><a href="/involved.html">Get Involved</a></p>
+    <hr>
+    <footer class="footergrid">
+        <div class="fmenu">
+            <p>Menu:</p>
+            <p><a href="/index.html">Home</a></p>
+            <p><a href="/explore.html">Explore</a></p>
+            <p><a href="/Exhibitions.html">Exhibitions</a></p>
+            <p><a href="/visit.html">Visit</a></p>
+            <p><a href="/involved.html">Get Involved</a></p>
+        </div>
+        <div class="fcontact">
+            <p>Contact:</p>
+            <p><i class="far fa-envelope"></i> Science@museum.com</p>
+            <p><i class="fas fa-phone-alt"></i> +4755458631</p>
+            <p>Kniksens Plass 10, 5063 Bergen.</p>
+        </div>
+        <p id="copyright">Copyrights reserved © Trygve Grant</p>
     </footer>
-
     <script src="./js/script.js">
-
     </script>
-    
 </body>
 </html>
