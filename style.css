@@ -369,7 +369,7 @@ hr {
   position: relative;
   text-align: right;
   height: 250px;
-  width: 300px;
+  width: 250px;
   padding-top: 30px;
 }
 
@@ -381,7 +381,7 @@ iframe {
   overflow: hidden;
   background: none;
   height: 250px;
-  width: 300px;
+  width: 250px;
 }
 
 /* Visit end */
