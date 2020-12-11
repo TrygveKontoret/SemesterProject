@@ -271,7 +271,6 @@ hr {
 
 .dark {
   background-color: #365b73;
-  /* background-color: #264653; */
   color: white;
 }
 
@@ -353,7 +352,6 @@ hr {
 
 .drink {
   background-color: #365b73;
-  /* background-color: #264653; */
   color: white;
 }
 
@@ -439,9 +437,6 @@ iframe {
   .indexbox,
   .box,
   .boxsmall {
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
     background-color: #003d5ba9;
     width: 30%;
     color: white;
@@ -490,13 +485,9 @@ iframe {
   }
 
   .cards {
-    /* display: flex;
-    align-items: center;
-    justify-content: space-between; */
     width: 350px;
     margin: 30px auto;
     background-color: #30638e;
-    /* background-color: #264653; */
     color: white;
     padding: 30px;
     box-shadow: 0 0 0 1px #000;
@@ -609,8 +600,6 @@ iframe {
   }
 
   .exbox {
-    /* flex-direction: column;
-    justify-content: flex-start; */
     width: 550px;
     margin: 0 0 30px 50px;
     height: 245px;
@@ -651,7 +640,6 @@ iframe {
 
   .admis {
     background-color: #365b73;
-    /* background-color: #264653; */
     color: white;
   }
 
